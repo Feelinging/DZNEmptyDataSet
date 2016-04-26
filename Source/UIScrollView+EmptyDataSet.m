@@ -675,7 +675,8 @@ NSString *dzn_implementationKey(id target, SEL selector)
 #pragma mark - UIGestureRecognizerDelegate Methods
 
 - (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldReceiveTouch:(UITouch *)touch {
-    return ![touch.view isKindOfClass:[UIControl class]];
+    // return ![touch.view isKindOfClass:[UIControl class]];
+    return YES;
 }
 
 - (BOOL)gestureRecognizerShouldBegin:(UIGestureRecognizer *)gestureRecognizer
